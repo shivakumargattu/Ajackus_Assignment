@@ -1,0 +1,37 @@
+{
+  "employee": [
+    {
+      "id": "9762",
+      "name": "Shivakumar",
+      "email": "shiva@gmail.com",
+      "role": "Full stack developer"
+    },
+    {
+      "id": "361b",
+      "name": "Anji",
+      "email": "anji@gmail.com",
+      "role": "devop Engineer"
+    },
+    {
+      "id": "70f0",
+      "name": "kalyan",
+      "email": "kalyan@gmail.com",
+      "role": "Frontend developer",
+      "active": true
+    },
+    {
+      "id": "928c",
+      "name": "ramya",
+      "email": "ramya@gmail.com",
+      "role": "HR",
+      "active": true
+    },
+    {
+      "id": "f7dd",
+      "name": "Hrithik",
+      "email": "hrithik@gmail.com",
+      "role": "UI/UX developer",
+      "active": true
+    }
+  ]
+}
