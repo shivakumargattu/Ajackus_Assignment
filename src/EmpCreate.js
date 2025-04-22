@@ -18,7 +18,7 @@ const EmpCreate = () => {
       const empdata={name,email,role,active};
       
 
-      fetch("http://localhost:8000/employee",{
+      fetch("https://employee-data-qbmx.onrender.com/employee",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
