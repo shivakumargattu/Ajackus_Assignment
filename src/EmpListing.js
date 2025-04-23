@@ -13,7 +13,7 @@ const EmpListing = () => {
     }
     const Removefunction = (id) => {
         if (window.confirm('Do you want to remove?')) {
-            fetch("http://localhost:8000/employee/" + id, {
+            fetch("https://employee-data-qbmx.onrender.com/employees" + id, {
                 method: "DELETE"
             }).then((res) => {
                 alert('Removed successfully.')
@@ -28,7 +28,7 @@ const EmpListing = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:8000/employee").then((res) => {
+        fetch("https://employee-data-qbmx.onrender.com/employees").then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);
@@ -59,9 +59,9 @@ const EmpListing = () => {
                         <tbody>
 
                             {empdata &&
-                                empdata.map(item => (
+                                empdata.map((item,index) => (
                                     <tr key={item.id}>
-                                        <td>{item.id}</td>
+                                        <td>{index+1}</td>
                                         <td>{item.name}</td>
                                         <td>{item.email}</td>
                                         <td>{item.role}</td>

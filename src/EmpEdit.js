@@ -7,7 +7,7 @@ const EmpEdit = () => {
     //const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:8000/employee/" + empid).then((res) => {
+        fetch("http://localhost:8000/employee/:" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             idchange(resp.id);
