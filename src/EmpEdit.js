@@ -35,7 +35,7 @@ const EmpEdit = () => {
       const empdata={id,name,email,role,active};
       
 
-      fetch("http://localhost:8000/employee/"+empid,{
+      fetch("https://employee-data-qbmx.onrender.com/employees/"+empid,{
         method:"PUT",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
